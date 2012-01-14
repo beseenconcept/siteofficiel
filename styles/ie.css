@@ -1,0 +1,67 @@
+/* 
+    Document   : ie
+    Created on : 22 déc. 2011, 09:42:10
+    Author     : devMachine
+    Description:
+        ie css styles
+*/
+.oldie body{
+    background-image: url("../media/images/fonds/fondie8.png");
+    background-repeat: repeat;
+   }
+
+/* ie < 9 ne gère pas rgba :-( */
+.oldie nav #presentation { 
+    border-bottom: 6px solid #C36;
+}
+
+.oldie nav #formation {
+    border-bottom:solid 6px #F60;
+}
+.oldie nav #conception {
+    border-bottom:solid 6px #393;
+}
+.oldie nav #dev {
+    border-bottom:solid 6px #069;
+}
+.oldie nav #tarifs {
+    border-bottom:solid 6px #835BD4;
+}
+
+/* Décalage d'un pixel sous ie8  */
+.ie8 #contenu .right {
+    top: 1px;
+}
+
+/* Permet d'appliquer border radius lte ie9 */ 
+#contenu .left {
+    background-image: url("../media/images/fonds/fondrightlteie9.png");
+}
+
+/* JQuery textShadow() ajoute un span pour son effet d'ombrage
+*  Ce dernier entre en conflit avec le span de mon h1 */
+
+h1 {
+    font-size: 100px;
+
+}
+
+h1 span {
+     font-size: 100px;
+}
+
+body h1 span#ts {
+    font-size: 36px
+}
+
+/* Les menu déroulants en css sous ie9 n'aiment pas les dégradés */
+
+nav ul li a:hover {
+    background-color: #EFEFEF;
+}
+
+nav li:hover ul a {
+    background-color: #EFEFEF;
+}
+
+    

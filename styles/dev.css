@@ -1,0 +1,44 @@
+/* 
+    Document   : dev
+    Created on : 16 déc. 2011, 09:46:00
+    Author     : devMachine
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html {
+    height: 100%; /* Fixe bug repetition dégradé bacjground Mozilla et Chrome pas Opera */
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Corps */
+/*#contenu {
+    height: 525px
+
+}*/
+
+/* Rendre la page visible */
+#activite_developpement {
+    opacity: 1;
+}
+
+#contenu .left {
+    padding: 0 15px 15px 15px;
+    width: 820px;
+    height: 510px;
+    overflow: auto;
+    }
+
+#contenu .right {
+    width: 60px;
+    left: 850px;
+    height: 525px;
+    margin-left: 20px;
+    padding-left: 32px;
+     
+}
+
+

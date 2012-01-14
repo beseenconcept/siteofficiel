@@ -1,0 +1,68 @@
+/* 
+    Document   : formation
+    Created on : 2 déc. 2011, 16:46:33
+    Author     : devMachine
+    Description:
+        Formations page styling
+*/
+
+/*html {
+    height: auto;  Fixe bug repetition dégradé bacjground Mozilla et Chrome pas Opera 
+}*/
+
+/* Corps */
+#contenu {
+    height: 525px
+}
+
+#contenu2 {
+    opacity: 1
+}
+
+#contenu .left {
+    width: 820px;
+    padding: 0 15px 15px 15px;
+    height: 510px;
+    overflow: hidden;
+}
+
+aside {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#contenu .right {
+    width: 60px;
+    height: 525px;
+    left: 850px;
+}
+
+/* Formulaire de recherche */
+
+form {
+    padding-top: 15px;
+}
+select {
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    -o-border-radius : 5px;
+    border-radius : 5px;
+    margin-right: 10px;
+    
+}
+
+select, input {
+    background-color: #E5E5E5;
+    padding: 3px;
+}
+
+select, input, label {
+    display: inline-block;
+}
+
+
+input[type="submit"] {
+    position: relative;
+    bottom: 2px;
+}
+
+

@@ -1,0 +1,5 @@
+"14 Dec 2011 17:17:17","C:\wamp\www\siteofficiel\scripts\connect.php: 6","(Warning) mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: php_network_getaddresses: getaddrinfo failed: Hôte inconnu. "
+"14 Dec 2011 17:17:17","C:\wamp\www\siteofficiel\scripts\connect.php: 6","(Warning) mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu.  (trying to connect via tcp://db394859215.db.1and1.com:3306)"
+"14 Dec 2011 17:17:17","C:\wamp\www\siteofficiel\scripts\connect.php: 6","(Warning) mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: php_network_getaddresses: getaddrinfo failed: Hôte inconnu. "
+"14 Dec 2011 17:17:17","C:\wamp\www\siteofficiel\pages\formation.php: 4","(Warning) mysql_select_db() expects parameter 2 to be resource, boolean given"
+"14 Dec 2011 17:17:17","C:\wamp\www\siteofficiel\pages\formation.php: 55","(Warning) mysql_fetch_assoc() expects parameter 1 to be resource, boolean given"

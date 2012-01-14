@@ -1,0 +1,17 @@
+Depuis le menu principal :
+	-Faire des a href vers des pages explicatives 
+	
+Depuis la page formation :
+	- faire des lien a href vers les categorie nomm�es dans la liste
+	
+dans conception web :
+	- voir le type de curseur au survol des 3 formules de cr�atiosn web
+	- c�er les raccourcis "ancres" vers web.html.
+	
+Prix abord�s dans la partie formation
+
+pensez a preciers un prix pour les conce^tion web et dev queqleupart.
+
+modifier les styles de puce dans chaque conteniu pour s'armoniser avec la couler de droite
+
+test ftp

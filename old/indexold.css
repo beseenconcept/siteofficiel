@@ -1,0 +1,177 @@
+/* 
+    Document   : index
+    Created on : 5 déc. 2011, 16:22:05
+    Author     : devMachine
+    Description:
+        Index specifications
+*/
+.left img {
+    display: inline-block;
+    padding-right: 15px;
+    float: left;
+}
+
+
+#contenu .left {
+    padding: 15px 15px 15px 15px;
+}
+
+/* Définition des puce */
+
+#contenu1 .left {
+    list-style-image: url("../media/images/ok_rose.png");
+}
+
+#contenu2 .left {
+    list-style-image: url("../media/images/ok_orange.png");
+}
+
+#contenu3 .left {
+    list-style-image: url("../media/images/ok_vert.png");
+}
+
+#contenu4 .left {
+    list-style-image: url("../media/images/ok_bleu.png");
+}
+
+#contenu5 .left {
+    list-style-image: url("../media/images/ok_violet.png");
+}
+
+/*#contenu .right {
+    background-image: url("../media/images/coin_2.png");
+}*/
+
+#signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    float: right;
+    -webkit-transform: rotate(-5deg); 
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    margin : 25px 100px 25px 0;
+}
+
+#qualification {
+    clear: right;
+    text-align: right;
+/*    margin-right: 5px;*/
+}
+
+#qualification img {
+    vertical-align: baseline;
+    padding: 0px 0px 0px 15px;
+    float: right;
+}
+/* TODO trouver alternative plus propre */ 
+#exemple img {
+    float: right;
+    padding-right: 400px;
+}
+
+#mention {
+    font-size: 14px;
+}
+
+form {
+    position: relative;
+}
+
+div#details {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    
+}
+
+textarea {
+    padding: 5px;
+    width: 295px;
+    height: 152px;
+}
+/* Formulaire */
+form {
+    text-indent: 0px;
+}
+
+label {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    display: block;
+    width: 200px;
+/*    -webkit-border-radius : 5px; /* TODO implémenter dès que les problèmes d'affiche le permettent'
+    -moz-border-radius : 5px;
+    -o-border-radius : 5px;
+    border-radius : 5px;*/
+}
+
+input[type="submit"] {
+    position: relative;
+    margin-top: -23px;
+    margin-left: 250px;
+    width: 333px;
+}
+
+input[type="reset"] {
+   position: relative;
+   margin-top: 10px;
+   margin-left: 0px;
+   width: 210px;
+}
+
+#contacts {
+    text-indent: 0px;
+   }
+   
+   #contacts a {
+       font-family: "Trebuchet MS", Verdana, Helvetica, Arial, "sans-serif";
+       text-decoration: underline;
+   }
+
+.vcard {
+    position: relative;
+    left : 200px;
+    top: -30px;
+    text-indent: 0px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, "sans-serif";
+    font-size: 12px;
+}
+
+.valide {
+	border-right: 8px solid green;
+	}
+.invalide {
+	border-right: 8px solid red;
+	}
+.invalide + span:after {
+	content: " (Saisie incomplète ou érronée)";
+	color: #789;
+}
+
+#reponse {
+    padding: 20px;
+    display: none;
+    position: relative;
+    top: 30%;   
+    left: 30%;
+    height: 100px;
+    width: 300px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, "sans-serif";
+/*    line-height: 100px;*/
+    text-align: center;
+    z-index: 20;
+    background-color: white;
+    border: 2px solid black;
+    -webkit-border-radius : 30px;
+    -moz-border-radius : 30px;
+    -o-border-radius : 30px;
+    border-radius : 30px;
+    -webkit-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    -p-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+}

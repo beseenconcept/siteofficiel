@@ -1,0 +1,93 @@
+/* 
+    Document   : web
+    Created on : 30 nov. 2011, 15:50:28
+    Author     : devMachine
+    Description:
+        Dev page styling
+*/
+
+html {
+    height: 100%; /* Fixe bug repetition dégradé bacjground Mozilla et Chrome pas Opera */
+}
+
+/* Corps */
+div#cm {
+    height: 615px
+
+}
+
+/* Rendre la page visible */
+#activite_conception_web {
+    opacity: 1;
+}
+
+#contenu .left {
+    padding: 0 15px 15px 15px;
+    width: 820px;
+    height: 510px;
+    overflow: auto;
+  }
+
+#cm .left {
+    height: 600px;
+}
+
+#contenu .right {
+    width: 60px;
+    left: 850px;
+    height: 525px;
+    margin-left: 20px;
+    padding-left: 32px;
+}
+
+#cm .right {
+    height: 615px;
+    background-image: url("../media/images/fonds/fondright_cms.png");
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.okvert {
+    list-style-image: url("../media/images/ok_vert.png");
+}
+
+figure {
+    margin-left: 0px;
+}
+
+#contenu #icone ul {
+    padding: 0;
+    width: 750px;
+    list-style-type: none;
+}
+
+#icone ul li {
+    float: left;
+    padding: 30px;
+}
+
+#icone ul li + li + li {
+    padding : 60px 10px 0px 50px;
+}
+
+#icone > p {
+    clear: left;
+}
+
+#atelier {
+    clear: left;
+}
+
+figure img{
+    float: right;
+}
+
+img#site , img#cms , img#atelier, img#reference {
+    padding-right: 10px
+}
+
+#formulaire {
+    display: block;
+}

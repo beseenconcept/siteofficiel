@@ -1,0 +1,97 @@
+/* 
+    Document   : formation
+    Created on : 2 déc. 2011, 16:46:33
+    Author     : devMachine
+    Description:
+        Formations page styling
+*/
+
+/*html {
+    height: auto;  Fixe bug repetition dégradé bacjground Mozilla et Chrome pas Opera 
+}*/
+
+/* Corps */
+/*#contenu {
+    height: 525px
+}*/
+
+#activite_formation {
+    opacity: 1
+}
+
+#contenu .left {
+    width: 820px;
+    padding: 0 15px 15px 15px;
+    height: 510px;
+    /*    overflow: hidden;*/
+}
+
+/* placement des éléments formation */
+#maincontent {
+
+}
+
+#planche-contact {
+    padding: 12px 12px 0px 12px;
+    height: 450px;
+    overflow: auto;
+}
+
+#planche-contact div {
+    height: 140px;
+    width: 140px;
+    float: left;
+}
+
+#planche-contact img {
+    border-top: 3px solid #444;
+    border-right: 3px solid #CCC;
+    border-bottom: 3px solid #CCC;
+    border-left: 3px solid #444;
+}
+
+#contenu .right {
+    width: 60px;
+    height: 525px;
+    left: 850px;
+    margin-left: 20px;
+    padding-left: 32px;
+}
+
+
+/* Formulaire de recherche */
+
+aside {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding-top: 15px;
+}
+select {
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    -o-border-radius : 5px;
+    border-radius : 5px;
+    margin-right: 10px;
+
+}
+
+select, input {
+    background-color: #E5E5E5;
+    padding: 3px;
+}
+
+select, input, label {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    position: relative;
+    bottom: 2px;
+}
+
+#photo_formation img {
+    height: 100px;
+    width: 100px;
+}

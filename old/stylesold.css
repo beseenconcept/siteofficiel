@@ -1,0 +1,451 @@
+/*
+ Document   : styles
+ Created on : 21 nov. 2011, 19:23:51
+ Author     : Sébastien Bodrero
+ Description:
+ List style introducing CSS3.
+*/
+
+/* reset css */
+h1, body, html {
+    margin: 0;
+    padding: 0;
+}
+
+a img, :link img, :visited img {
+    border: none;
+}
+
+img {
+    border: 0;
+}
+
+/* Fin reset css */
+/* Introduction des éléments html5*/
+abbr, article, aside, audio, canvas, datalist, details, figure, dialog, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video {
+    display: block;
+}
+
+/* Fin html5 */
+html {
+    height: 100%;
+    font-size: 100%;
+    /*    height: 100%;  fixe le probleme de répètition du fon dégradé sur Mozilla et Chrome mais pas Opera*/
+    /*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8C8C8C', endColorstr='#CCCCCC',GradientType=0 );  IE6-9 Dégradé du fond*/
+}
+
+body {
+    margin: 15px auto;
+    padding: 10px 0 0 0;
+    width: 960px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, "sans-serif";
+    font-size: 80%;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#8C8C8C), to(#CCCCCC));*/ /* TODO implémenter par la suite */
+    /* background: -moz-linear-gradient(top, #8C8C8C 0%, #CCCCCC 100%); */
+    /* background: -o-linear-gradient(top,rgb(140,140,140),rgb(200,200,200));*/
+    background-image: url("../media/images/fonds/fond2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Entête*/
+header {
+    width: 960px;
+    height: 100px;
+    -webkit-border-radius: 30px 30px 0px 0px;
+    -moz-border-radius: 30px 30px 0px 0px;
+    -o-border-radius: 30px 30px 0px 0px;;
+    border-radius: 30px 30px 0px 0px;
+    background-color: rgba(165, 165, 165, 0.5);
+    background-image: url("../media/images/fonds/fond_h1.png");
+    background-repeat: no-repeat;
+}
+
+header img {
+    float: right;
+    padding: 60px 10px 10px 0px;
+}
+
+/* Logo */
+canvas {
+    margin-left: 10px;
+    float: left;
+}
+
+h1 {
+    position: relative;
+    width: 600px;
+    color: #CCCCCC;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 1);
+    -ms-text-shadow: 0 0 7px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    margin-left: 180px;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -ms-transition-property: text-shadow padding; /* ie 10 ? */
+    -ms-transition-duration: 1s; /* ie 10 ? */
+    -webkit-transition-property: text-shadow padding;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: text-shadow padding;
+    -moz-transition-duration: 1s;
+    -o-transition-property: text-shadow padding;
+    -o-transition-duration: 1s;
+}
+
+h1 span {
+    font-size: 36px;
+}
+
+h1:hover {
+    padding-left: 12px;
+    padding-top: -3px;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+}
+
+/* Fin logo */
+#conteneur {
+    margin: 15px auto;
+}
+
+/* Corps */
+p {
+    text-align: justify;
+}
+
+#contenu {
+    position: relative;
+    height: 525px;
+    clear: both;
+    -webkit-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    -p-box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    box-shadow: 20px 10px 10px rgba(50, 50, 50, 0.5);
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+    border-radius: 0 0 30px 30px;
+}
+
+#contenu1, #contenu2, #contenu3, #contenu4, #contenu5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition-property: opacity z-index;
+    -webkit-transition-duration: 2s;
+    -moz-transition-property: opacity z-index;
+    -moz-transition-duration: 2s;
+    -o-transition-property: opacity z-index;
+    -o-transition-duration: 2s;
+    z-index: 1;
+}
+
+#contenu1 {
+    opacity: 1;
+}
+
+#contenu .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 495px;
+    width: 625px;
+    font-family: 'Amaranth', sans-serif;
+    text-indent: 20px;
+    font-size: 115%;
+    background-color: #FFF;
+    -webkit-border-radius: 0 0 0 30px;
+    -moz-border-radius: 0 0 0 30px;
+    -o-border-radius: 0 0 0 30px;
+    border-radius: 0 0 0 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#A5A5A5));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #A5A5A5 100%);
+    background: -o-linear-gradient(top,rgb(255,255,255),rgb(165, 165, 165));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#A5A5A5',GradientType=0 ); /* IE6-9 */
+}
+
+#contenu .left a{
+    text-decoration: none;
+}
+
+#contenu .left a:link, #contenu .left a:visited {
+    color: #000000;
+}
+
+#contenu .right {
+    position: absolute;
+    top: 0;
+    left: 655px;
+    padding-left: 50px;
+    height: 525px;
+    width: 255px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #FFF;
+    line-height: 525px;
+    background-color: #F60;
+    background-repeat: no-repeat;
+    -webkit-border-radius : 0 0 30px 0;
+    -moz-border-radius : 0 0 30px 0;
+    -o-border-radius : 0 0 30px 0;
+    border-radius : 0 0 30px 0px;
+}
+
+
+#contenu1 .left {
+    list-style-image: url("../media/images/ok_rose.png");
+}
+
+#contenu2 .left {
+    list-style-image: url("../media/images/ok_orange.png");
+}
+
+
+#contenu4 .left {
+    list-style-image: url("../media/images/ok_bleu.png");
+}
+
+#contenu5 .left {
+    list-style-image: url("../media/images/ok_violet.png");
+}
+
+.right:first-letter {
+    font-size: 30px;
+}
+
+.right img {
+    float: right;
+}
+
+#contenu1 .right {
+    /*
+background-color: #C36;
+    */
+    background-image: url("../media/images/fonds/flou.png");
+}
+
+#contenu2 .right {
+    /*
+     background-color: #F60;
+    */
+    background-image: url("../media/images/fonds/fondright2.png");
+}
+
+#contenu3 .right {
+    /*
+background-color: #393;
+    */
+    background-image: url("../media/images/fonds/fondright3.png");
+}
+
+#contenu4 .right {
+    /*
+background-color: #069;
+    */
+    background-image: url("../media/images/fonds/fondright4.png");
+    font-size: 18px;
+}
+
+#contenu5 .right {
+    /*
+background-color: #63C;
+    */
+    background-image: url("../media/images/fonds/fondright5.png");
+}
+
+#contenu1:target,#contenu2:target,#contenu3:target,#contenu4:target,#contenu5:target,#contenu6:target {
+    opacity: 1;
+    z-index: 2;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+/* Menu */
+nav {
+    clear: left;
+}
+
+nav ul {
+    padding: 0;
+    margin-left: 100px;
+    width: 750px;
+    list-style-type: none;
+}
+
+nav ul ul {
+    display: none;
+    margin: 0px;
+    width: 200px;
+}
+
+nav ul li+li, nav ul li+li+li, nav ul li+li+li+li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #000000;
+    display: block;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E5E5E5));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background: -o-linear-gradient(top,rgb(255,255,255),rgb(229,229,229));
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E5E5E5',GradientType=0 );  IE6-9 */
+}
+
+nav li:hover ul {
+    display: block;
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    z-index:10;
+
+
+}
+/* TODO rapprocher au code css ci-dessus */
+nav li:hover ul a {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E5E5E5));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+    background: -o-linear-gradient(top,rgb(255,255,255),rgb(229,229,229));
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E5E5E5',GradientType=0 );  IE6-9 */
+    border-bottom: 1px solid #393;
+    opacity: 0.9;
+}
+
+nav li:hover ul li a#orange {
+    border-bottom: 1px solid #F60;
+}
+
+nav li:hover ul li a#bleu {
+    border-bottom: 1px solid #069;
+}
+
+nav li:hover ul a:hover {
+    opacity: 1;
+}
+
+nav #presentation { 
+    border-bottom: 6px solid rgba(204, 51, 102, 0.8);
+    /*#C36*/
+}
+
+nav #formation {
+    border-bottom:solid 6px rgba(255, 102, 0, 0.8);
+    /*#F60*/
+}
+nav #conception {
+    border-bottom:solid 6px rgba(51, 152, 51, 0.8);
+    /*#393*/
+}
+nav #dev {
+    border-bottom:solid 6px rgba(0, 102, 153, 0.8);
+    /*#069*/
+}
+nav #tarifs {
+    border-bottom:solid 6px rgba(102, 51, 204, 0.8);
+    /*#063C*/
+}
+
+nav ul li  {
+    float: left;
+}
+
+nav ul ul li {
+    clear: left;
+}
+
+/* Pied de page*/
+footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#racform, #racweb, #racdev, #raccontact {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 15px;
+    height: 25px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#8C8C8C));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #8C8C8C 100%);
+    background: -o-linear-gradient(top,rgb(255,255,255),rgb(140,140,140));
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#8C8C8C',GradientType=0 );  IE6-9 */
+    -webkit-border-radius : 30px;
+    -moz-border-radius : 30px;
+    -o-border-radius : 30px;
+    border-radius : 30px;
+}
+
+#racform {
+    border-left: 5px solid #F60;
+}
+
+#racweb {
+    border-left: 5px solid #393;
+}
+
+#racdev {
+    border-left: 5px solid #069;
+}
+
+#raccontact {
+    border-left: 5px solid #63C;
+}
+
+footer span {
+    display: block;
+    margin-top: 10px;
+}
+
+footer a {
+    font-family: 'Amaranth', sans-serif;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    -webkit-border-radius : 30px;
+    -moz-border-radius : 30px;
+    -o-border-radius : 30px;
+    border-radius : 30px;
+   
+}
+
+footer a:link, a:visited {
+    color: #020202
+}
+
+footer a:hover {
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.6);
+}
+
+footer span a {
+    display: inline;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
